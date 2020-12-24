@@ -1,0 +1,58 @@
+// Mixin
+// Simple Mixin
+@mixin inline-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        display: inline-block;
+    }
+}
+
+.header ul {
+    @include inline-list();
+    li {
+        background-color: #3235e7;
+        padding: 0.7em;
+        border-radius: 10px;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+.footer ul {
+    @include inline-list();
+    li {
+        background-color: coral;
+        border-radius: 10px;
+        padding: 0.5em;
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+}
+
+// Arguments pada Mixin
+@mixin flex-box($direction: row, $space: center) {
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+    flex-direction: $direction;
+}
+
+.container {
+    @include flex-box(row-reverse, space-evenly);
+    width: 600px;
+    height: 400px;
+    background-color: #eaeaea;
+    .box {
+        width: 60px;
+        height: 60px;
+        background: #bada55;
+        text-align: center;
+        line-height: 60px;
+    }
+}

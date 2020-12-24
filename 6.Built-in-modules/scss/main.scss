@@ -1,0 +1,10 @@
+// Built in Modules
+// adjust-color($color: #000000, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0)
+$primary-color: orangered;
+h1 {
+    // color: adjust-color( $color: $primary-color, $red: 1, $green: 2, $blue: 3, $alpha: 0.7);
+}
+
+h1 {
+    // color: adjust-color($color: $primary-color, $hue: 180);
+}

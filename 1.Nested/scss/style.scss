@@ -1,0 +1,53 @@
+// Nested CSS
+// .main {
+//     background-color: #eaeaea;
+//     .main-heading {
+//         font-size: 2em;
+//     }
+//     .main-paragraph {
+//         font-size: 24px;
+//     }
+// }
+// Apabila menargetkan 2 atau lebih element
+// .main,
+// footer {
+//     h1,
+//     p {
+//         letter-spacing: 1px;
+//     }
+// }
+// Char &
+// fungsi & ke 1
+// Parent Selector
+// .main {
+//     .container & {
+//         background-color: #eaeaea;
+//     }
+//     .main-paragraph {
+//         font-size: 30px;
+//     }
+//     &:hover {
+//         background-color: orange;
+//     }
+// }
+// fungsi & ke 2
+// serta #{&} interpolasi
+.main {
+    font-family: sans-serif;
+    #{&}-heading {
+        font-size: 24px;
+    }
+    &-paragraph {
+        font-size: 16px;
+    }
+}
+
+.footer {
+    font-family: sans-serif;
+    & &-heading {
+        font-size: 24px;
+    }
+    #{&}-paragraph {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,54 @@
+// CSS Variabel
+// :root {
+//     --primary-color: orange;
+//     --secondary-color: orangered;
+//     --text-color: #a5a5a5;
+// }
+// body {
+//     background-color: var(--primary-color);
+// }
+// h1 {
+//     color: var(--text-color);
+// }
+// p {
+//     color: var(--text-color);
+// }
+// SASS Variabel
+// Perhatikan Scope Variabel
+// 1. Global Var
+// $secondary-color: orangered;
+// $text-color: #f1ebeb;
+// // 4. Jika terdapat nama yang sama maka perhatikan scope
+// $text-color-copy-2: coral;
+// body {
+//     // 2. Local Var
+//     $primary-color: orange;
+//     // 3. Memaksa var yang ada di local scope agar jadi Global scope
+//     $secondary-text-color: lightblue !global;
+//     background-color: $primary-color;
+//     h1 {
+//         background-color: $secondary-color;
+//         color: $text-color-copy-2;
+//     }
+//     p {
+//         background-color: $secondary-color;
+//         color: $text-color;
+//     }
+// }
+// h5 {
+//     // 4. Jika terdapat nama yang sama maka perhatikan scope
+//     $text-color-copy-2: #34ff01;
+//     color: $text-color-copy-2;
+//     background-color: $secondary-text-color;
+// }
+// SASS Map
+// 1. Meubah variabel dibwah ke Map
+// $alert-warning: orange;
+// $alert-danger: red;
+// $alert-success: green;
+// Tampilan dalam Map
+$alert: ( "danger": red, "warning": orange, "success": green, );
+h1 {
+    // Cara memanggil Map
+    color: map-get($alert, "warning");
+}

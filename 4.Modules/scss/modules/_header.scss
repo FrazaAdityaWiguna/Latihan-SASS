@@ -1,0 +1,13 @@
+@use "submodules/mixin";
+.header ul {
+    @include mixin.inline-list();
+    li {
+        background-color: #3235e7;
+        padding: 0.7em;
+        border-radius: 10px;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}

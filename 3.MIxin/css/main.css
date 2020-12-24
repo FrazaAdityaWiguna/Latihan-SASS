@@ -1,0 +1,69 @@
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header ul li {
+  display: inline-block;
+}
+
+.header ul li {
+  background-color: #3235e7;
+  padding: 0.7em;
+  border-radius: 10px;
+}
+
+.header ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  display: inline-block;
+}
+
+.footer ul li {
+  background-color: coral;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+
+.footer ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 600px;
+  height: 400px;
+  background-color: #eaeaea;
+}
+
+.container .box {
+  width: 60px;
+  height: 60px;
+  background: #bada55;
+  text-align: center;
+  line-height: 60px;
+}
+/*# sourceMappingURL=main.css.map */
